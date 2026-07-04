@@ -1,0 +1,5 @@
+Employees do not have local administrator rights on company laptops. To install approved software, open the Company Portal app and search for the application; approved titles install automatically without IT involvement.
+
+If the software you need is not listed in the Company Portal, submit a software request ticket describing the business need. Requests are reviewed by the security team within 2 business days.
+
+Unapproved or unlicensed software must never be installed manually, even with elevated permissions granted temporarily by IT, as this violates the company's software compliance policy.

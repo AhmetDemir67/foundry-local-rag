@@ -1,0 +1,5 @@
+Files stored in your Documents, Desktop, and Pictures folders are automatically backed up to OneDrive every 15 minutes as long as you are connected to the internet. No manual action is required.
+
+To restore a previous version of a file, right-click the file in OneDrive, choose "Version History", and select the version you want to restore.
+
+Files stored outside of the OneDrive-synced folders, such as directly on drive D or in a non-synced folder, are not backed up automatically and may be permanently lost if the device fails.

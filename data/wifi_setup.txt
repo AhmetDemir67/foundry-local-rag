@@ -1,0 +1,5 @@
+To connect to the corporate Wi-Fi network "CorpNet-Secure", select it from your Wi-Fi list and sign in with your regular company username and password. Your device must already be enrolled in device management for this network to accept the connection.
+
+Guests and personal devices should use "CorpNet-Guest" instead, which requires a temporary code obtainable from the front desk and does not have access to internal systems.
+
+If CorpNet-Secure repeatedly rejects your credentials even though they are correct, your device certificate may have expired; this requires the IT Helpdesk to re-enroll the device.

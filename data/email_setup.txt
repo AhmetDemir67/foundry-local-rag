@@ -1,0 +1,5 @@
+Company email can be added to Outlook automatically on managed laptops; simply open Outlook and sign in with your company email address, and the configuration is applied without manual server settings.
+
+On mobile phones, install the Outlook mobile app from the app store and sign in the same way. Manual IMAP or POP configuration is not supported and will not connect correctly.
+
+To request access to a shared team mailbox, submit an access request ticket naming the mailbox and your manager for approval; access is normally granted within one business day.

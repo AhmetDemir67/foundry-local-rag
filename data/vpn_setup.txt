@@ -1,0 +1,5 @@
+Remote employees must use the company VPN client, GlobalProtect, to access internal systems from outside the office. Download the installer from the software portal and sign in with your regular company credentials.
+
+If the VPN connects but internal websites still do not load, try disconnecting and reconnecting, since the client sometimes fails to apply internal DNS settings on the first attempt. Restarting the GlobalProtect client usually resolves this.
+
+The VPN automatically disconnects after 10 hours of inactivity for security reasons. If you consistently cannot connect at all, this is usually a firewall issue on your home network and should be escalated to the IT Helpdesk.

@@ -1,0 +1,5 @@
+All company laptops must have full-disk encryption enabled and a screen lock that activates after 5 minutes of inactivity. This is enforced automatically by device management software.
+
+If you receive a suspicious email asking for credentials or containing an unexpected attachment, do not click any links. Use the "Report Phishing" button in the email client, which forwards the message directly to the security team for analysis.
+
+Confidential company data must never be copied to personal USB drives or personal cloud storage accounts. Approved storage locations are the company OneDrive and internal file shares only.

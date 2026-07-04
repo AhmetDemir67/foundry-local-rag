@@ -1,0 +1,5 @@
+To add a network printer, open Settings > Printers & Scanners and select "Add Printer". Office printers are named by floor and room number, for example PRN-3F-302.
+
+If a print job is stuck in the queue, open the print queue, cancel the stuck job, and restart the Print Spooler service. This resolves the vast majority of printing issues without needing to contact IT.
+
+For paper jams or hardware errors shown on the printer's own screen, do not attempt to repair the printer yourself. Contact Facilities, not the IT Helpdesk, since printer hardware is managed by a separate team.
