@@ -5,6 +5,12 @@ from similarity import cosine_similarity
 
 
 def get_top_chunks(query, embedding_client, k=3):
+    """Sorguyu embed'ler, rag.db'deki tüm parçalarla kosinüs benzerliğini
+    hesaplar ve en alakalı k parçayı (skor, source, content) olarak döner.
+
+    Küçük veri kümesi için tüm vektörleri belleğe okuyup brute-force
+    karşılaştırmak yeterlidir; büyük ölçekte özel bir vektör DB gerekir.
+    """
     sorgu_sonucu = embedding_client.generate_embedding(query)
     sorgu_vektoru = sorgu_sonucu.data[0].embedding
 

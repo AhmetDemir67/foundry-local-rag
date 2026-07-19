@@ -3,9 +3,15 @@ from foundry import load_model
 from retrieval import get_top_chunks
 
 SYSTEM_PROMPT_TEMPLATE = """You are a question-answering assistant. Only use the
-information in the CONTEXT below to answer. If the answer is not in the
-context, do not make anything up; just reply with
-"I could not find this information in my documents."
+information in the CONTEXT below to answer. Ignore any part of the CONTEXT
+that is not relevant to the question being asked.
+
+If the CONTEXT fully answers the question, give a direct answer only -
+do not add any disclaimer about missing information.
+
+If the CONTEXT does not contain the answer, do not make anything up and do
+not guess or suggest where else to look. Reply with exactly this sentence
+and nothing else: "I could not find this information in my documents."
 
 CONTEXT:
 {context}
@@ -13,6 +19,9 @@ CONTEXT:
 
 
 def answer_query(question, embedding_client, chat_client, k=3):
+    """RAG akışının tamamı: retrieval (get_top_chunks) + generation (chat_client).
+    Model, sistem promptu gereği yalnızca CONTEXT içeriğini kullanır; bağlamda
+    yoksa "bulamadım" cevabı verir, böylece halüsinasyon riski azaltılır."""
     top_chunks = get_top_chunks(question, embedding_client, k=k)
     context = "\n\n".join(f"(Source: {source}) {content}" for _, source, content in top_chunks)
     system_prompt = SYSTEM_PROMPT_TEMPLATE.format(context=context)
